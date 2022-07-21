@@ -29,6 +29,7 @@ namespace EnhancedMap.GUI
         private long _refresh = 9999L;
         private bool _requestRefresh;
         private readonly System.Windows.Forms.Timer _timer;
+        private bool _showHouses = true;
 
         public MainWindow()
         {
@@ -117,8 +118,29 @@ namespace EnhancedMap.GUI
                 if (!SharedLabelWindow.Visible) SharedLabelWindow.Show(this);
             });
             markesM.DropDownItems.Add(markesM_local);
-            markesM.DropDownItems.Add(markesM_shared);
+            markesM.DropDownItems.Add(markesM_shared);           
             menu.Items.Add(markesM);
+
+            ToolStripMenuItem markesM_houses = new ToolStripMenuItem(" Toggle Houses", null, (sender, e) =>
+            {
+                if (_showHouses == false)
+                {
+                    ((ToolStripMenuItem)sender).Checked = true;
+                    _showHouses = true;
+                    FilesManager.Houses.ForEach(s => RenderObjectsManager.AddHouse(new HouseObject(s)));
+                    _requestRefresh = true;
+                }
+                else
+                {
+                    ((ToolStripMenuItem)sender).Checked = false;
+                    _showHouses = false;
+                    FilesManager.Houses.ForEach(s => RenderObjectsManager.AddHouse(new HouseObject(s)));
+                    RenderObjectsManager.ClearHouses();
+                    _requestRefresh = true;
+                }
+            });
+            markesM_houses.Checked = true;
+            menu.Items.Add(markesM_houses);
 
             ToolStripMenuItem signalsM = new ToolStripMenuItem("Signals");
             ToolStripMenuItem signalsM_panic = new ToolStripMenuItem("Send panic!", null, (sender, e) => { CommandManager.DoCommand((Global.PlayerInstance.InPanic ? "un" : "") + "panic"); });
@@ -479,7 +501,8 @@ namespace EnhancedMap.GUI
                 FilesManager.Houses.ForEach(s => RenderObjectsManager.AddHouse(new HouseObject(s)));
                 FilesManager.BuildSets.ForEach(s => s.Entries.ForEach(a => RenderObjectsManager.AddBuilding(new BuildingObject(a))));
 
-                HouseReader.LoadXml();
+                //TEST
+                //HouseReader.LoadXml();
 
                 int mapX = Global.SettingsCollection["mapX"].ToInt();
                 int mapY = Global.SettingsCollection["mapY"].ToInt();
@@ -1126,33 +1149,50 @@ namespace EnhancedMap.GUI
             {
                 case (int) MSG_RECV.HOUSES_BOATS_INFO:
                 {
-                    int x = m.WParam.ToInt32() & 65535;
-                    int y = m.WParam.ToInt32() >> 16;
-                    uint id = (uint) m.LParam - 0x4000;
-
-                    GameHouse gamehouse = HouseReader.GetHouse(id);
-                    if (gamehouse != null)
+                    if (_showHouses)
                     {
-                        x = x - gamehouse.Size.X / 2;
-                        y = y - gamehouse.Size.Y / 2;
+                        int x = m.WParam.ToInt32() & 65535;
+                        int y = m.WParam.ToInt32() >> 16;
+                        uint id = (uint)m.LParam - 0x4000;
 
-                        var houses = RenderObjectsManager.Get<HouseObject>().Where(s => s.Entry.Map == Global.PlayerInstance.Map && new Rectangle(s.Entry.Location.X, s.Entry.Location.Y, s.Entry.Size.Width, s.Entry.Size.Height).IntersectsWith(new Rectangle((short) x, (short) y, gamehouse.Size.X, gamehouse.Size.Y))).ToList();
-
-
-                        if (houses.Count == 0)
+                        GameHouse gamehouse = HouseReader.GetHouse(id);
+                        if (gamehouse != null)
                         {
-                            var h = new HouseObject(new HouseEntry(string.Format("{0} House: {1}x{2} at {3},{4} {5}", id.ToString("X"), gamehouse.Size.X, gamehouse.Size.Y, x, y, Global.PlayerInstance.Map), (ushort) id, new Position((short) x, (short) y), new Size(gamehouse.Size.X, gamehouse.Size.Y), Global.PlayerInstance.Map));
-                            RenderObjectsManager.AddHouse(h);
+                            x = x - gamehouse.Size.X / 2;
+                            y = y - gamehouse.Size.Y / 2;
 
-                            FilesManager.Houses.Add(h.Entry);
+                            var houses = RenderObjectsManager.Get<HouseObject>().Where(s => s.Entry.Map == Global.PlayerInstance.Map && new Rectangle(s.Entry.Location.X, s.Entry.Location.Y, s.Entry.Size.Width, s.Entry.Size.Height).IntersectsWith(new Rectangle((short)x, (short)y, gamehouse.Size.X, gamehouse.Size.Y))).ToList();
+
+
+                            if (houses.Count == 0)
+                            {
+                                var h = new HouseObject(new HouseEntry(string.Format("{0} House: {1}x{2} at {3},{4} {5}", id.ToString("X"), gamehouse.Size.X, gamehouse.Size.Y, x, y, Global.PlayerInstance.Map), (ushort)id, new Position((short)x, (short)y), new Size(gamehouse.Size.X, gamehouse.Size.Y), Global.PlayerInstance.Map));
+                                RenderObjectsManager.AddHouse(h);
+
+                                FilesManager.Houses.Add(h.Entry);
+                            }
+                        }
+                        else
+                        {
+                           //TEST - Get a POPUP when a new house not on our list is detected
+                            MessageBox.Show(id.ToString("X"));
                         }
                     }
-
                     break;
+                        
                 }
                 case (int) MSG_RECV.DEL_HOUSES_BOATS_INFO:
                 {
-                    break;
+
+
+
+
+
+
+
+
+
+                        break;
                 }
                 case 1425: // chat
                 {

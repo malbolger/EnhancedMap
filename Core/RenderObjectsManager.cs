@@ -128,7 +128,11 @@ namespace EnhancedMap.Core
 
         public static void RemoveHouse(HouseObject obj)
         {
-            _objects[(int) LAYER_ORDER.HOUSES].Remove(obj);
+            _objects[(int) LAYER_ORDER.HOUSES].Remove(obj);          
+        }
+        public static void ClearHouses()
+        {
+            _objects[(int) LAYER_ORDER.HOUSES].Clear();
         }
 
         public static void RemoveSharedLabel(SharedLabelObject obj)

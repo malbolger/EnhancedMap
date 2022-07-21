@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EnhancedMap</RootNamespace>
     <AssemblyName>EnhancedMap</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -386,218 +386,642 @@
   <ItemGroup>
     <Content Include="enhancedmapicon.ico" />
     <Content Include="libs\Aga.Controls.dll" />
-    <Content Include="libs\Files\Definitions\ARCHERSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\ARMAMENTSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\ARMOURERSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\ARMS.txt" />
-    <Content Include="libs\Files\Definitions\ASSASINSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\BAKER.txt" />
-    <Content Include="libs\Files\Definitions\BANK.txt" />
-    <Content Include="libs\Files\Definitions\BARBERSHOP.txt" />
-    <Content Include="libs\Files\Definitions\BARD.txt" />
-    <Content Include="libs\Files\Definitions\BARDICGUILD.txt" />
-    <Content Include="libs\Files\Definitions\BEEKEEPER.txt" />
-    <Content Include="libs\Files\Definitions\BLACKSMITH.txt" />
-    <Content Include="libs\Files\Definitions\BLACKSMITHSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\BODYOFWATER.txt" />
-    <Content Include="libs\Files\Definitions\BOWYER.txt" />
-    <Content Include="libs\Files\Definitions\BRASS.txt" />
-    <Content Include="libs\Files\Definitions\BRIDGE.txt" />
-    <Content Include="libs\Files\Definitions\BUTCHER.txt" />
-    <Content Include="libs\Files\Definitions\CARPENTER.txt" />
-    <Content Include="libs\Files\Definitions\CASTLE.txt" />
-    <Content Include="libs\Files\Definitions\CAVALRYGUILD.txt" />
-    <Content Include="libs\Files\Definitions\COOKSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\CUSTOMS.txt" />
-    <Content Include="libs\Files\Definitions\DOCKS.txt" />
-    <Content Include="libs\Files\Definitions\DUNGEON.txt" />
-    <Content Include="libs\Files\Definitions\EXIT.txt" />
-    <Content Include="libs\Files\Definitions\FIGHTERSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\FISHERMANSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\FLETCHER.txt" />
-    <Content Include="libs\Files\Definitions\GATE.txt" />
-    <Content Include="libs\Files\Definitions\GEM.txt" />
-    <Content Include="libs\Files\Definitions\GRAVEYARD.txt" />
-    <Content Include="libs\Files\Definitions\GUARDLINES.txt" />
-    <Content Include="libs\Files\Definitions\GUILD.txt" />
-    <Content Include="libs\Files\Definitions\HEALER.txt" />
-    <Content Include="libs\Files\Definitions\HEALERSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\HOUSES.txt" />
-    <Content Include="libs\Files\Definitions\ILLUSIONISTSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\INN.txt" />
-    <Content Include="libs\Files\Definitions\INTEREST.txt" />
-    <Content Include="libs\Files\Definitions\ISLAND.txt" />
-    <Content Include="libs\Files\Definitions\JEWELER.txt" />
-    <Content Include="libs\Files\Definitions\KEEP.txt" />
-    <Content Include="libs\Files\Definitions\LANDMARK.txt" />
-    <Content Include="libs\Files\Definitions\LARGEHOUSE.txt" />
-    <Content Include="libs\Files\Definitions\LGBOATE.txt" />
-    <Content Include="libs\Files\Definitions\LGBOATN.txt" />
-    <Content Include="libs\Files\Definitions\LGBOATS.txt" />
-    <Content Include="libs\Files\Definitions\LGBOATW.txt" />
-    <Content Include="libs\Files\Definitions\LIBRARY.txt" />
-    <Content Include="libs\Files\Definitions\LOGCABIN.txt" />
-    <Content Include="libs\Files\Definitions\MAGESGUILD.txt" />
-    <Content Include="libs\Files\Definitions\MAGIC.txt" />
-    <Content Include="libs\Files\Definitions\MARKET.txt" />
-    <Content Include="libs\Files\Definitions\MARPATIO.txt" />
-    <Content Include="libs\Files\Definitions\MDBOATE.txt" />
-    <Content Include="libs\Files\Definitions\MDBOATN.txt" />
-    <Content Include="libs\Files\Definitions\MDBOATS.txt" />
-    <Content Include="libs\Files\Definitions\MDBOATW.txt" />
-    <Content Include="libs\Files\Definitions\MERCHANTSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\MINERSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\MOONGATE.txt" />
-    <Content Include="libs\Files\Definitions\OTHER.txt" />
-    <Content Include="libs\Files\Definitions\PAINTER.txt" />
-    <Content Include="libs\Files\Definitions\PATIO.txt" />
-    <Content Include="libs\Files\Definitions\POINT.txt" />
-    <Content Include="libs\Files\Definitions\PROVISIONERSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\PROVISIONS.txt" />
-    <Content Include="libs\Files\Definitions\REAGENTS.txt" />
-    <Content Include="libs\Files\Definitions\ROGUESGUILD.txt" />
-    <Content Include="libs\Files\Definitions\RUINS.txt" />
-    <Content Include="libs\Files\Definitions\SAILORSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\SCENIC.txt" />
-    <Content Include="libs\Files\Definitions\SHIP.txt" />
-    <Content Include="libs\Files\Definitions\SHIPS.txt" />
-    <Content Include="libs\Files\Definitions\SHIPWRIGHTSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\SHRINE.txt" />
-    <Content Include="libs\Files\Definitions\SMALLHOUSE.txt" />
-    <Content Include="libs\Files\Definitions\SMBOATE.txt" />
-    <Content Include="libs\Files\Definitions\SMBOATN.txt" />
-    <Content Include="libs\Files\Definitions\SMBOATS.txt" />
-    <Content Include="libs\Files\Definitions\SMBOATW.txt" />
-    <Content Include="libs\Files\Definitions\SMLMSHOP.txt" />
-    <Content Include="libs\Files\Definitions\SMLSSHOP.txt" />
-    <Content Include="libs\Files\Definitions\SMLTOWER.txt" />
-    <Content Include="libs\Files\Definitions\SNDPATIO.txt" />
-    <Content Include="libs\Files\Definitions\SORCERERSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\STABLES.txt" />
-    <Content Include="libs\Files\Definitions\STAIRS.txt" />
-    <Content Include="libs\Files\Definitions\TAILOR.txt" />
-    <Content Include="libs\Files\Definitions\TANNER.txt" />
-    <Content Include="libs\Files\Definitions\TAVERN.txt" />
-    <Content Include="libs\Files\Definitions\TELEPORT.txt" />
-    <Content Include="libs\Files\Definitions\TENT.txt" />
-    <Content Include="libs\Files\Definitions\TERRAIN.txt" />
-    <Content Include="libs\Files\Definitions\THEATRE.txt" />
-    <Content Include="libs\Files\Definitions\THIEVESGUILD.txt" />
-    <Content Include="libs\Files\Definitions\TINKER.txt" />
-    <Content Include="libs\Files\Definitions\TINKERSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\TOWER.txt" />
-    <Content Include="libs\Files\Definitions\TOWN.txt" />
-    <Content Include="libs\Files\Definitions\TRADERSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\TREASURE.txt" />
-    <Content Include="libs\Files\Definitions\TWOSTORY.txt" />
-    <Content Include="libs\Files\Definitions\VILLA.txt" />
-    <Content Include="libs\Files\Definitions\WARRIORSGUILD.txt" />
-    <Content Include="libs\Files\Definitions\WEAPONSGUILD.txt" />
-    <Content Include="libs\Files\Icon\ARCHERSGUILD.png" />
-    <Content Include="libs\Files\Icon\ARMAMENTSGUILD.png" />
-    <Content Include="libs\Files\Icon\ARMOURERSGUILD.png" />
-    <Content Include="libs\Files\Icon\ARMS.png" />
-    <Content Include="libs\Files\Icon\ASSASINSGUILD.png" />
-    <Content Include="libs\Files\Icon\BAKER.png" />
-    <Content Include="libs\Files\Icon\BANK.png" />
-    <Content Include="libs\Files\Icon\BARBERSHOP.png" />
-    <Content Include="libs\Files\Icon\BARD.png" />
-    <Content Include="libs\Files\Icon\BARDICGUILD.png" />
-    <Content Include="libs\Files\Icon\BEEKEEPER.png" />
-    <Content Include="libs\Files\Icon\BLACKSMITH.png" />
-    <Content Include="libs\Files\Icon\BLACKSMITHSGUILD.png" />
-    <Content Include="libs\Files\Icon\BODYOFWATER.png" />
-    <Content Include="libs\Files\Icon\BOWYER.png" />
-    <Content Include="libs\Files\Icon\BRASS.png" />
-    <Content Include="libs\Files\Icon\BRIDGE.png" />
-    <Content Include="libs\Files\Icon\BUTCHER.png" />
-    <Content Include="libs\Files\Icon\CARPENTER.png" />
-    <Content Include="libs\Files\Icon\CASTLE.png" />
-    <Content Include="libs\Files\Icon\CAVALRYGUILD.png" />
-    <Content Include="libs\Files\Icon\COOKSGUILD.png" />
-    <Content Include="libs\Files\Icon\CUSTOMS.png" />
-    <Content Include="libs\Files\Icon\DOCKS.png" />
-    <Content Include="libs\Files\Icon\DUNGEON.png" />
-    <Content Include="libs\Files\Icon\EXIT.png" />
-    <Content Include="libs\Files\Icon\FIGHTERSGUILD.png" />
-    <Content Include="libs\Files\Icon\FISHERMANSGUILD.png" />
-    <Content Include="libs\Files\Icon\FLETCHER.png" />
-    <Content Include="libs\Files\Icon\GATE.png" />
-    <Content Include="libs\Files\Icon\GEM.png" />
-    <Content Include="libs\Files\Icon\GRAVEYARD.png" />
-    <Content Include="libs\Files\Icon\GUILD.png" />
-    <Content Include="libs\Files\Icon\HEALER.png" />
-    <Content Include="libs\Files\Icon\HEALERSGUILD.png" />
-    <Content Include="libs\Files\Icon\ILLUSIONISTSGUILD.png" />
-    <Content Include="libs\Files\Icon\INN.png" />
-    <Content Include="libs\Files\Icon\INTEREST.png" />
-    <Content Include="libs\Files\Icon\ISLAND.png" />
-    <Content Include="libs\Files\Icon\JEWELER.png" />
-    <Content Include="libs\Files\Icon\KEEP.png" />
-    <Content Include="libs\Files\Icon\LANDMARK.png" />
-    <Content Include="libs\Files\Icon\LARGEHOUSE.png" />
-    <Content Include="libs\Files\Icon\LGBOATE.png" />
-    <Content Include="libs\Files\Icon\LGBOATN.png" />
-    <Content Include="libs\Files\Icon\LGBOATS.png" />
-    <Content Include="libs\Files\Icon\LGBOATW.png" />
-    <Content Include="libs\Files\Icon\LIBRARY.png" />
-    <Content Include="libs\Files\Icon\LOGCABIN.png" />
-    <Content Include="libs\Files\Icon\MAGESGUILD.png" />
-    <Content Include="libs\Files\Icon\MAGIC.png" />
-    <Content Include="libs\Files\Icon\MARKET.png" />
-    <Content Include="libs\Files\Icon\MARPATIO.png" />
-    <Content Include="libs\Files\Icon\MDBOATE.png" />
-    <Content Include="libs\Files\Icon\MDBOATN.png" />
-    <Content Include="libs\Files\Icon\MDBOATS.png" />
-    <Content Include="libs\Files\Icon\MDBOATW.png" />
-    <Content Include="libs\Files\Icon\MERCHANTSGUILD.png" />
-    <Content Include="libs\Files\Icon\MINERSGUILD.png" />
-    <Content Include="libs\Files\Icon\MOONGATE.png" />
-    <Content Include="libs\Files\Icon\OTHER.png" />
-    <Content Include="libs\Files\Icon\PAINTER.png" />
-    <Content Include="libs\Files\Icon\PATIO.png" />
-    <Content Include="libs\Files\Icon\POINT.png" />
-    <Content Include="libs\Files\Icon\PROVISIONERSGUILD.png" />
-    <Content Include="libs\Files\Icon\PROVISIONS.png" />
-    <Content Include="libs\Files\Icon\REAGENTS.png" />
-    <Content Include="libs\Files\Icon\ROGUESGUILD.png" />
-    <Content Include="libs\Files\Icon\RUINS.png" />
-    <Content Include="libs\Files\Icon\SAILORSGUILD.png" />
-    <Content Include="libs\Files\Icon\SCENIC.png" />
-    <Content Include="libs\Files\Icon\SHIP.png" />
-    <Content Include="libs\Files\Icon\SHIPS.png" />
-    <Content Include="libs\Files\Icon\SHIPWRIGHTSGUILD.png" />
-    <Content Include="libs\Files\Icon\SHRINE.png" />
-    <Content Include="libs\Files\Icon\SMALLHOUSE.png" />
-    <Content Include="libs\Files\Icon\SMBOATE.png" />
-    <Content Include="libs\Files\Icon\SMBOATN.png" />
-    <Content Include="libs\Files\Icon\SMBOATS.png" />
-    <Content Include="libs\Files\Icon\SMBOATW.png" />
-    <Content Include="libs\Files\Icon\SMLMSHOP.png" />
-    <Content Include="libs\Files\Icon\SMLSSHOP.png" />
-    <Content Include="libs\Files\Icon\SMLTOWER.png" />
-    <Content Include="libs\Files\Icon\SNDPATIO.png" />
-    <Content Include="libs\Files\Icon\SORCERERSGUILD.png" />
-    <Content Include="libs\Files\Icon\STABLES.png" />
-    <Content Include="libs\Files\Icon\STAIRS.png" />
-    <Content Include="libs\Files\Icon\TAILOR.png" />
-    <Content Include="libs\Files\Icon\TANNER.png" />
-    <Content Include="libs\Files\Icon\TAVERN.png" />
-    <Content Include="libs\Files\Icon\TELEPORT.png" />
-    <Content Include="libs\Files\Icon\TENT.png" />
-    <Content Include="libs\Files\Icon\TERRAIN.png" />
-    <Content Include="libs\Files\Icon\THEATRE.png" />
-    <Content Include="libs\Files\Icon\THIEVESGUILD.png" />
-    <Content Include="libs\Files\Icon\TINKER.png" />
-    <Content Include="libs\Files\Icon\TINKERSGUILD.png" />
-    <Content Include="libs\Files\Icon\TOWER.png" />
-    <Content Include="libs\Files\Icon\TOWN.png" />
-    <Content Include="libs\Files\Icon\TRADERSGUILD.png" />
-    <Content Include="libs\Files\Icon\TREASURE.png" />
-    <Content Include="libs\Files\Icon\TWOSTORY.png" />
-    <Content Include="libs\Files\Icon\VILLA.png" />
-    <Content Include="libs\Files\Icon\WARRIORSGUILD.png" />
-    <Content Include="libs\Files\Icon\WEAPONSGUILD.png" />
+    <Content Include="libs\Files\Definitions\ARCHERSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\ARMAMENTSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\ARMOURERSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\ARMS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\ASSASINSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BAKER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BANK.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BARBERSHOP.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BARD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BARDICGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BEEKEEPER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BLACKSMITH.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BLACKSMITHSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BODYOFWATER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BOWYER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BRASS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BRIDGE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\BUTCHER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\CARPENTER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\CASTLE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\CAVALRYGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\COOKSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\CUSTOMS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\DOCKS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\DUNGEON.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\EXIT.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\FIGHTERSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\FISHERMANSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\FLETCHER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\GATE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\GEM.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\GRAVEYARD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\GUARDLINES.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\GUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\HEALER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\HEALERSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\HOUSES.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\ILLUSIONISTSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\INN.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\INTEREST.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\ISLAND.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\JEWELER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\KEEP.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\LANDMARK.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\LARGEHOUSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\LGBOATE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\LGBOATN.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\LGBOATS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\LGBOATW.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\LIBRARY.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\LOGCABIN.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\MAGESGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\MAGIC.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\MARKET.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\MARPATIO.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\MDBOATE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\MDBOATN.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\MDBOATS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\MDBOATW.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\MERCHANTSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\MINERSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\MOONGATE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\OTHER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\PAINTER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\PATIO.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\POINT.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\PROVISIONERSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\PROVISIONS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\REAGENTS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\ROGUESGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\RUINS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SAILORSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SCENIC.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SHIP.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SHIPS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SHIPWRIGHTSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SHRINE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SMALLHOUSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SMBOATE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SMBOATN.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SMBOATS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SMBOATW.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SMLMSHOP.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SMLSSHOP.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SMLTOWER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SNDPATIO.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\SORCERERSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\STABLES.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\STAIRS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TAILOR.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TANNER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TAVERN.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TELEPORT.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TENT.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TERRAIN.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\THEATRE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\THIEVESGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TINKER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TINKERSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TOWER.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TOWN.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TRADERSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TREASURE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\TWOSTORY.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\VILLA.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\WARRIORSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Definitions\WEAPONSGUILD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\ARCHERSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\ARMAMENTSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\ARMOURERSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\ARMS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\ASSASINSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BAKER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BANK.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BARBERSHOP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BARD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BARDICGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BEEKEEPER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BLACKSMITH.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BLACKSMITHSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BODYOFWATER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BOWYER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BRASS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BRIDGE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\BUTCHER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\CARPENTER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\CASTLE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\CAVALRYGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\COOKSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\CUSTOMS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\DOCKS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\DUNGEON.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\EXIT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\FIGHTERSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\FISHERMANSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\FLETCHER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\GATE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\GEM.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\GRAVEYARD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\GUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\HEALER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\HEALERSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\ILLUSIONISTSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\INN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\INTEREST.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\ISLAND.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\JEWELER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\KEEP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\LANDMARK.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\LARGEHOUSE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\LGBOATE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\LGBOATN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\LGBOATS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\LGBOATW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\LIBRARY.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\LOGCABIN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\MAGESGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\MAGIC.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\MARKET.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\MARPATIO.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\MDBOATE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\MDBOATN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\MDBOATS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\MDBOATW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\MERCHANTSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\MINERSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\MOONGATE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\OTHER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\PAINTER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\PATIO.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\POINT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\PROVISIONERSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\PROVISIONS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\REAGENTS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\ROGUESGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\RUINS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SAILORSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SCENIC.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SHIP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SHIPS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SHIPWRIGHTSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SHRINE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SMALLHOUSE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SMBOATE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SMBOATN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SMBOATS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SMBOATW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SMLMSHOP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SMLSSHOP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SMLTOWER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SNDPATIO.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\SORCERERSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\STABLES.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\STAIRS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TAILOR.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TANNER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TAVERN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TELEPORT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TENT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TERRAIN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\THEATRE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\THIEVESGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TINKER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TINKERSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TOWER.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TRADERSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TREASURE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\TWOSTORY.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\VILLA.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\WARRIORSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\Files\Icon\WEAPONSGUILD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="libs\System.ValueTuple.dll" />
     <Content Include="libs\uo.dll" />
     <None Include="Resources\SHAREDLABEL.png" />
