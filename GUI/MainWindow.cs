@@ -121,7 +121,7 @@ namespace EnhancedMap.GUI
             markesM.DropDownItems.Add(markesM_shared);           
             menu.Items.Add(markesM);
 
-            ToolStripMenuItem markesM_houses = new ToolStripMenuItem(" Toggle Houses", null, (sender, e) =>
+            ToolStripMenuItem markesM_houses = new ToolStripMenuItem("Toggle Houses", null, (sender, e) =>
             {
                 if (_showHouses == false)
                 {

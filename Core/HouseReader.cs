@@ -333,13 +333,28 @@ namespace EnhancedMap.Core
             {0xF7, new GameHouse(0xF7, 16, 15) },
             //12C Wooden Square House 8, 8
             {0x12C, new GameHouse(0x12C, 8, 8) },
-            //{0x12C, new GameHouse(0x12C, 8, 8) },
+            //10B Fieldstone and Plaster Half Shoppe 9, 7
+            {0x10B, new GameHouse(0x10B, 9, 7) },
+            //138 Frontier Two Story Slate Roof 12, 15
+            {0x138, new GameHouse(0x138, 12, 15) },
+            //177 Lightstone and Wood Bungalow 20, 18
+            {0x177, new GameHouse(0x177, 20, 18) },
+            //DB Sandstone Stained Glass Villa 8, 8
+            {0xDB, new GameHouse(0xDB, 8, 8) },
+            //FA Farmstead Compound 31, 31
+            {0xFA, new GameHouse(0xFA, 31, 31) },
+            //E0 Cambrian Greathall 16, 10
+            {0xE0, new GameHouse(0xE0, 16, 10) },
+            //D3 Frontier Compound 29, 29
+            {0xD3, new GameHouse(0xD3, 29, 29) },
 
             //10 BOAT!?!?! 5, 13
             {0x10, new GameHouse(0x10, 5, 13) },
 
 
-            //18E Syn Guildhouse 30, 30
+
+
+            //18E Syn Guildhouse  30, 30
             {0x18E, new GameHouse(0x18E, 30, 30) },
 
 
