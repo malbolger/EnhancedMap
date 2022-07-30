@@ -29,7 +29,7 @@ namespace EnhancedMap.GUI
         private long _refresh = 9999L;
         private bool _requestRefresh;
         private readonly System.Windows.Forms.Timer _timer;
-        private bool _showHouses = true;
+        //private bool _showHouses = true;
 
         public MainWindow()
         {
@@ -123,17 +123,18 @@ namespace EnhancedMap.GUI
 
             ToolStripMenuItem markesM_houses = new ToolStripMenuItem("Toggle Houses", null, (sender, e) =>
             {
-                if (_showHouses == false)
+                if(!Global.SettingsCollection["showhouses"].ToBool())
                 {
                     ((ToolStripMenuItem)sender).Checked = true;
-                    _showHouses = true;
+                    //_showHouses = true;
+                    Global.SettingsCollection["showhouses"] = true;
                     FilesManager.Houses.ForEach(s => RenderObjectsManager.AddHouse(new HouseObject(s)));
                     _requestRefresh = true;
                 }
                 else
                 {
                     ((ToolStripMenuItem)sender).Checked = false;
-                    _showHouses = false;
+                    Global.SettingsCollection["showhouses"] = false;
                     FilesManager.Houses.ForEach(s => RenderObjectsManager.AddHouse(new HouseObject(s)));
                     RenderObjectsManager.ClearHouses();
                     _requestRefresh = true;
@@ -1149,7 +1150,7 @@ namespace EnhancedMap.GUI
             {
                 case (int) MSG_RECV.HOUSES_BOATS_INFO:
                 {
-                    if (_showHouses)
+                    if (Global.SettingsCollection["showhouses"].ToBool())
                     {
                         int x = m.WParam.ToInt32() & 65535;
                         int y = m.WParam.ToInt32() >> 16;
@@ -1161,17 +1162,36 @@ namespace EnhancedMap.GUI
                             x = x - gamehouse.Size.X / 2;
                             y = y - gamehouse.Size.Y / 2;
 
+                            //RectangleF houseRect = new RectangleF(x, y, gamehouse.Size.X, gamehouse.Size.Y);
+
                             var houses = RenderObjectsManager.Get<HouseObject>().Where(s => s.Entry.Map == Global.PlayerInstance.Map && new Rectangle(s.Entry.Location.X, s.Entry.Location.Y, s.Entry.Size.Width, s.Entry.Size.Height).IntersectsWith(new Rectangle((short)x, (short)y, gamehouse.Size.X, gamehouse.Size.Y))).ToList();
 
 
-                            if (houses.Count == 0)
-                            {
-                                var h = new HouseObject(new HouseEntry(string.Format("{0} House: {1}x{2} at {3},{4} {5}", id.ToString("X"), gamehouse.Size.X, gamehouse.Size.Y, x, y, Global.PlayerInstance.Map), (ushort)id, new Position((short)x, (short)y), new Size(gamehouse.Size.X, gamehouse.Size.Y), Global.PlayerInstance.Map));
-                                RenderObjectsManager.AddHouse(h);
+                                if (houses.Count == 0)
+                                {
+                                    var h = new HouseObject(new HouseEntry(string.Format("{0} House: {1}x{2} at {3},{4} {5}", id.ToString("X"), gamehouse.Size.X, gamehouse.Size.Y, x, y, Global.PlayerInstance.Map), (ushort)id, new Position((short)x, (short)y), new Size(gamehouse.Size.X, gamehouse.Size.Y), Global.PlayerInstance.Map));
 
-                                FilesManager.Houses.Add(h.Entry);
+
+                                        RenderObjectsManager.AddHouse(h);
+                                        FilesManager.Houses.Add(h.Entry);                                                                        
+                                }
+                                else
+                                {
+                                    var h = new HouseObject(new HouseEntry(string.Format("{0} House: {1}x{2} at {3},{4} {5}", id.ToString("X"), gamehouse.Size.X, gamehouse.Size.Y, x, y, Global.PlayerInstance.Map), (ushort)id, new Position((short)x, (short)y), new Size(gamehouse.Size.X, gamehouse.Size.Y), Global.PlayerInstance.Map));
+                                    if (houses.First().Name != h.Name)
+                                    {
+                                        //Remove the house that does not match
+                                        RenderObjectsManager.RemoveHouse(houses.First());
+                                        FilesManager.Houses.Remove(h.Entry);
+
+                                        //Add the new house
+                                        RenderObjectsManager.AddHouse(h);
+                                        FilesManager.Houses.Add(h.Entry);
+                                    }
+                                }
+
+
                             }
-                        }
                         else
                         {
                            //TEST - Get a POPUP when a new house not on our list is detected

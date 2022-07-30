@@ -134,6 +134,7 @@ namespace EnhancedMap.Core.MapObjects
             int mouseX = (int) ((MouseManager.Location.X - aa - canvasW / 2) / (1f / Global.Zoom));
             int mouseY = (int) ((MouseManager.Location.Y - bb - canvasH / 2) / (1f / Global.Zoom));
 
+            //render on mouse over
             if (houseRect.Contains(mouseX, mouseY))
             {
                 g.DrawRectangle(Pens.Yellow, bx - 1, by - 1, Entry.Size.Width * Global.Zoom + 2, Entry.Size.Height * Global.Zoom + 2);
